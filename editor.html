@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>编辑流程 · 自动化流程编辑器</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/editor.css" />
+  </head>
+  <body class="nfe-editor-body">
+    <div class="nfe-app">
+      <header class="nfe-topbar"></header>
+
+      <div class="nfe-workspace">
+        <aside class="nfe-sidebar nfe-palette"></aside>
+
+        <main class="nfe-canvas" tabindex="0">
+          <div class="nfe-grid"></div>
+          <div class="nfe-world">
+            <svg class="nfe-edge-layer" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="nfe-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3"
+                  orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L8,3 L0,6 z" fill="currentColor"></path>
+                </marker>
+              </defs>
+            </svg>
+            <svg class="nfe-guide-layer" xmlns="http://www.w3.org/2000/svg"></svg>
+            <div class="nfe-node-layer"></div>
+          </div>
+
+          <div class="nfe-marquee"></div>
+
+          <div class="nfe-empty-hint">
+            <p>画布是空的</p>
+            <span>从左侧把节点拖进来，开始连接你的流程</span>
+          </div>
+
+          <div class="nfe-zoom"></div>
+          <div class="nfe-canvas-hint">
+            滚轮缩放 · 拖空白/空格平移 · Shift+拖空白框选 · 从输出口拉线到输入口
+          </div>
+        </main>
+
+        <aside class="nfe-sidebar nfe-properties"></aside>
+      </div>
+    </div>
+
+    <script type="module" src="src/pages/editor.js"></script>
+  </body>
+</html>

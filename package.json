@@ -1,0 +1,11 @@
+{
+  "name": "workflow-editor-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "纯前端节点式自动化流程编辑器原型（原生 JS / ES Modules，无第三方依赖）",
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "serve": "python3 -m http.server 8080"
+  }
+}

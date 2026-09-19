@@ -1,0 +1,125 @@
+.nfe-list-body {
+  background:
+    radial-gradient(1100px 500px at 80% -10%, rgba(99, 102, 241, 0.12), transparent 60%),
+    var(--bg-0);
+}
+
+.nfe-list-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(17, 21, 31, 0.8);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nfe-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nfe-brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.6);
+}
+.nfe-brand-name {
+  font-weight: 700;
+  font-size: 14.5px;
+  letter-spacing: 0.2px;
+}
+
+.nfe-list-main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 36px 28px 80px;
+}
+.nfe-list-section-head h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+.nfe-list-section-head p {
+  margin: 0 0 26px;
+  color: var(--text-2);
+}
+
+.nfe-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+.nfe-flow-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.nfe-flow-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.nfe-flow-card-main {
+  min-width: 0;
+}
+.nfe-flow-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nfe-flow-card-meta {
+  display: flex;
+  gap: 7px;
+  color: var(--text-2);
+  font-size: 12px;
+}
+.nfe-flow-count {
+  color: var(--text-1);
+}
+.nfe-flow-dot {
+  opacity: 0.5;
+}
+.nfe-flow-actions {
+  display: flex;
+  gap: 6px;
+}
+.nfe-flow-actions .nfe-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.nfe-list-empty {
+  text-align: center;
+  padding: 90px 20px;
+  color: var(--text-2);
+}
+.nfe-list-empty p {
+  color: var(--text-1);
+  font-size: 15px;
+  margin: 18px 0 6px;
+}
+.nfe-empty-illustration {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 2px dashed var(--border-strong);
+  background:
+    linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(34, 211, 238, 0.08));
+}

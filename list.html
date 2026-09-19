@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>流程列表 · 自动化流程编辑器</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/list.css" />
+  </head>
+  <body class="nfe-list-body">
+    <header class="nfe-list-header">
+      <div class="nfe-brand">
+        <span class="nfe-brand-mark"></span>
+        <span class="nfe-brand-name">自动化流程编辑器</span>
+      </div>
+      <button class="nfe-btn nfe-btn-primary nfe-new-flow">+ 新建流程</button>
+    </header>
+
+    <main class="nfe-list-main">
+      <div class="nfe-list-section-head">
+        <h1>我的流程</h1>
+        <p>运营自助编排：定时触发 → 拉数据 → 条件分支 → 发通知</p>
+      </div>
+
+      <div class="nfe-flow-grid"></div>
+
+      <div class="nfe-list-empty nfe-hidden">
+        <div class="nfe-empty-illustration"></div>
+        <p>还没有流程</p>
+        <span>点击右上角「新建流程」开始画第一张图</span>
+      </div>
+    </main>
+
+    <script type="module" src="src/pages/list.js"></script>
+  </body>
+</html>
