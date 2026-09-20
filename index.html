@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:," />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>流程列表 · 自动化流程配置</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/list.css" />
+</head>
+<body>
+  <div class="list-page">
+    <div class="list-inner">
+      <div class="list-header">
+        <div>
+          <h1>自动化流程</h1>
+          <div class="sub">可视化编排 · 数据保存在当前会话（sessionStorage）</div>
+        </div>
+        <button class="btn btn-primary" id="btnNew">+ 新建流程</button>
+      </div>
+      <div id="flowList"></div>
+    </div>
+  </div>
+  <script type="module" src="src/list/listPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:," />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>流程编辑 · 自动化流程配置</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/editor.css" />
+</head>
+<body>
+  <div class="editor-root">
+    <header class="topbar">
+      <button class="btn btn-ghost" id="btnBack">← 列表</button>
+      <div class="flow-title" id="flowTitle" title="点击重命名">未命名流程</div>
+      <span class="save-state" id="saveState"></span>
+      <div class="spacer"></div>
+      <button class="btn btn-ghost" id="btnUndo" title="Ctrl+Z">↩ 撤销</button>
+      <button class="btn btn-ghost" id="btnRedo" title="Ctrl+Shift+Z">↪ 重做</button>
+      <button class="btn btn-primary" id="btnExport">导出 JSON</button>
+    </header>
+
+    <aside class="palette" id="palette"></aside>
+
+    <main class="canvas-wrap" id="canvasWrap" tabindex="0">
+      <div class="canvas-grid" id="canvasGrid"></div>
+      <div class="viewport" id="viewport">
+        <svg class="edge-layer" id="edgeLayer"></svg>
+        <div id="nodeLayer"></div>
+        <div id="guideLayer"></div>
+      </div>
+      <div class="marquee" id="marquee" hidden></div>
+      <div class="zoom-controls">
+        <button class="btn btn-ghost" id="btnZoomOut" title="缩小">−</button>
+        <span class="zoom-label" id="zoomLabel">100%</span>
+        <button class="btn btn-ghost" id="btnZoomIn" title="放大">＋</button>
+        <button class="btn btn-ghost" id="btnZoomReset" title="复位视图">复位</button>
+      </div>
+      <div class="canvas-hint">拖空白平移 · Shift+拖框选 · 空格+拖平移 · 滚轮缩放</div>
+    </main>
+
+    <aside class="inspector" id="inspector"></aside>
+  </div>
+  <script type="module" src="src/editor/editorPage.js"></script>
+</body>
+</html>
